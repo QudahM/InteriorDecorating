@@ -47,47 +47,47 @@ const commonMaterials = [
   {
     name: "Glass",
     image:
-      "https://images.unsplash.com/photo-1598928636135-d146006ff4be?w=800&q=80",
+      "https://images.unsplash.com/photo-1547366785-564103df7e13?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    name: "Steel",
+    name: "Metal",
     image:
-      "https://images.unsplash.com/photo-1602664876866-d3b33b77756b?w=800&q=80",
+      "https://images.unsplash.com/photo-1655183860325-cbcc80919811?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Wood",
     image:
-      "https://images.unsplash.com/photo-1572297794908-f2ee5a2930d05?w=800&q=80",
+      "https://images.unsplash.com/photo-1596865668258-242a087887ab?q=80&w=2092&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Marble",
     image:
-      "https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?w=800&q=80",
+      "https://images.unsplash.com/photo-1566305977571-5666677c6e98?q=80&w=2145&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Concrete",
     image:
-      "https://images.unsplash.com/photo-1617391258031-f8d80b22fb37?w=800&q=80",
+      "https://images.unsplash.com/photo-1573345173719-5fbd4783d3c8?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Leather",
     image:
-      "https://images.unsplash.com/photo-1629971500821-3b5cc276b58a?w=800&q=80",
+      "https://images.unsplash.com/photo-1571829604981-ea159f94e5ad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Velvet",
     image:
-      "https://images.unsplash.com/photo-1594040226829-7f251ab46d80?w=800&q=80",
+      "https://assets.wfcdn.com/im/04237209/compr-r85/2428/242849983/Luevano+79.1%27%27+Velvet+Sofa.jpg",
   },
   {
     name: "Rattan",
     image:
-      "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&q=80",
+      "https://kozykingdom.com/wp-content/uploads/2022/10/Bayside-Rattan-Furniture.jpg",
   },
   {
-    name: "Brass",
+    name: "Fabric",
     image:
-      "https://images.unsplash.com/photo-1629971500821-3b5cc276b58a?w=800&q=80",
+      "https://www.gowfb.ca/cdn/shop/products/aman-sofa-set-rancho-fabric-living-room-set-14147709960254_1242x700.jpg?v=1722569201",
   },
 ];
 

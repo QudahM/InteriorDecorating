@@ -6,6 +6,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import RoomLayoutBuilder from "./RoomLayoutBuilder";
 import StyleSelector from "./StyleSelector";
 import PreviewPanel from "./PreviewPanel";
+import { generateRoomImage } from "@/lib/generateRoomImage";
+import { set } from "date-fns";
 
 interface RoomDesignWizardProps {
   onComplete?: (data: any) => void;
@@ -23,6 +25,7 @@ const RoomDesignWizard = ({
   initialStep = 1,
 }: RoomDesignWizardProps) => {
   const [currentStep, setCurrentStep] = useState(initialStep);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [roomData, setRoomData] = useState({
     layout: [],
     dimensions: { width: 12, length: 15, height: 8 },
@@ -30,7 +33,8 @@ const RoomDesignWizard = ({
     colorPalette: [],
     materials: [],
   });
-
+  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
+  
   const progress = (currentStep / steps.length) * 100;
 
   const handleNext = () => {
@@ -108,7 +112,17 @@ const RoomDesignWizard = ({
                 </p>
                 <Button
                   size="lg"
-                  onClick={() => onComplete(roomData)}
+                  onClick={async () => {
+                    setErrorMessage(null);
+                    setGeneratedImage(null);
+                    const image = await generateRoomImage(roomData);
+                    if (!image){
+                      setErrorMessage("There are no more daily tokens. Please try again tomorrow.");
+                      return;
+                    }
+                    setGeneratedImage(image);
+                    onComplete(roomData);
+                  }}
                   className="w-full max-w-md"
                 >
                   Generate Design
@@ -118,7 +132,7 @@ const RoomDesignWizard = ({
           </div>
 
           <div className="w-[400px]">
-            <PreviewPanel roomData={roomData} />
+            <PreviewPanel roomData={roomData} imageData={generatedImage} errorMessage={errorMessage} />
           </div>
         </div>
 
